@@ -32,7 +32,9 @@ SECRET_KEY = 'django-insecure-d9m-t1+dkam2h5z48(c9t45_1g+6@k_knjiy))eo^#l7ms0u3v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'vams-7sm6.onrender.com'
+]
 
 
 # Application definition
@@ -87,12 +89,6 @@ WSGI_APPLICATION = 'vlaf.wsgi.application'
     #'default': {
         #'ENGINE': 'django.db.backends.sqlite3',
         #'NAME': BASE_DIR / "db.sqlite3",
-        
-        # 'NAME': 'vlaf',
-        # 'USER': 'root',
-        # 'PASSWORD': '',
-        # 'HOST': '127.0.0.1',
-        # 'PORT': '3306'
    # }
 #}
 
