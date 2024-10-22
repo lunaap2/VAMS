@@ -1,0 +1,92 @@
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.image-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.image {
+    width: 100%;
+    height: auto;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+}
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.text-container h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #333;
+}
+.text-container p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #555;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+}
+
+.image-container {
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.texto-transparente {
+background: rgba(227, 134, 168, 0.7); 
+border-radius: 10px; 
+padding: 30px; 
+background-image: url("{% static 'assets/img/nosotros.png' %}");
+margin: auto; 
+box-shadow: 0 4px 20px rgba(105, 51, 106, 0.9); 
+text-align: center; 
+}
+
+h1 {
+margin-bottom: 20px; 
+}
+
+p {
+line-height: 1.6; 
+}
+    

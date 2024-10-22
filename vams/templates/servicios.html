@@ -1,0 +1,68 @@
+{% extends "generic/footer.html" %}
+{% block content %}
+  {% load static %}
+   <title>Servicios de la Empresa</title>
+   <style>
+
+        header {
+            background: #e2d4f9 ;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .servicios {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+            border: 1px solid #915eae;
+        }
+        .servicio {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border: 1px solid #e48ecf;
+        }
+        h2 {
+            color: #d672de;
+        }
+    </style>
+    <header>
+      <h1 style="text-align: center; font-size: 30px; font-weight: bold; color: #866195; margin-bottom: 10px;">Nuestros Servicios</h1>
+    </header>
+    <div class="servicios">
+        <div class="servicio">
+            <h2>Asesoría </h2>
+            <img src="https://i.pinimg.com/564x/82/86/30/8286307a6b1c4df7f44bc568e9e2f2df.jpg" class="card-img-top" alt="..." width="" height="315px"><br>
+            <br><p style= "text-align: justify"> Ofrecer consultas en línea donde las clientas
+              puedan recibir recomendaciones de accesorios según
+              su estilo, ocasión o tendencias actuales.</p>
+        </div>
+        <div class="servicio">
+            <h2>Personalización</h2>
+            <img src="https://siemprehayalgoqueponerse.com/wp-contenido/uploads/2020/10/asesoras-de-imagen-personal-vigo-personal-shopper-siempre-hay-algo-que-ponerse-servicios-edited.jpg" class="card-img-top" alt="..." height="315px"><br>
+            <br><p style= "text-align: justify">
+              Permitir a las clientas personalizar algunos productos, como collares o pulseras, eligiendo colores, materiales o añadiendo iniciales.</p>
+        </div>
+        <div class="servicio">
+            <h2>Descuentos</h2>
+            <img src="https://clemenciaperis.com/wp-content/uploads/2023/08/NL_blackfriday.png" class="card-img-top" alt="..." height="315px"><br>
+            <br><p style= "text-align: justify">Informa sobre ofertas especiales, descuentos por tiempo limitado, o programas de fidelidad para clientes frecuentes.</p>
+        </div>
+        <div class="servicio">
+            <h2>Testimonios Clientes</h2>
+            <img src="https://acaddemia.com/wp-content/uploads/2022/08/Mujer-recibiendo-notoficacion.jpg" class="card-img-top" alt="..."  height="315px"><br>
+            <br><p style= "text-align: justify">Comparte opiniones y experiencias de clientes satisfechos en nuestro formulario. Esto genera confianza y puede influir en la decisión de compra de nuevos clientes.</p>
+        </div>
+        <div class="servicio">
+            <h2>Descripción Joyas</h2>
+            <img src="https://secrecyjewels.es/blog/wp-content/uploads/2022/08/tipo-de-joyas.jpg" class="card-img-top" alt="..." height="315px"><br>
+            <br><p style= "text-align: justify">Detallamos los tipos de accesorios que ofrecemos, como joyería, gafas y diademas. Incluye materiales, estilos y tendencias actuales.
+            </p>
+        </div>
+    </div><br>
+{% endblock %}

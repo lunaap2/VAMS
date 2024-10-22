@@ -1,0 +1,35 @@
+{% extends "generic/nav.html" %}
+{% block footer %}
+  {% load static %}
+<footer style="background-color: #d1a8f1; padding: 20px; display: flex; flex-direction: column; align-items: center;">
+  <div style="display: flex; justify-content: space-between; width: 100%; max-width: 1320px;">
+    <div style="display: flex; align-items: center;">
+      <img src="{% static 'assets/img/logo-vams.png' %}" alt="Logo"
+        style="width: 230px; height: 200PX; margin-right: 10px;">
+      <p style="font-style: serif; margin: 0; font-weight: bold;">Diseñados Pensando en Ti</p>
+    </div>
+
+    <div aling-start="center" class="col-12 col-lg-6 col-md-4" style="text-align:center;">
+      <h5 style="text-align: center; font-size: 30px; font-weight: bold; color: #040404; margin-bottom: 20px;">
+        Contactanos</h5>
+
+      <a style="color: black;" target="blank" href="https://www.instagram.com/vams.accesorios?igsh=dXBibnJ2cTBpdzJw">
+        <i style="font-size: 30px; margin-right: 10px;" class="bi bi-instagram"></i></a>
+
+      <a style="color: black;" target="blank" href="https://wa.me/+573132529283"><i style="font-size: 30px; margin-right: 10px;"
+          class="bi bi-telephone-outbound-fill"></i></a>
+
+      <a style="color: black;" target="blank" href="mailto:lunydiaz57@gmail.com"> <i style="font-size: 30px; margin-right: 10px;"
+          class="bi bi-envelope-heart">
+          <hr>
+        </i></a>
+
+      <div style="text-align: center;">
+        <p>&copy; 2024 Mi sitio web. Todos los derechos reservados.</p>
+      </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="{% static 'assets/js/swiper.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "generic/footer.html" %}
+{% block content %}
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'assets/css/catalogo.css' %}">
+  <header>
+    <h2 style="text-align: center; font-size: 30px; font-weight: bold; color: #866195; margin-bottom: 20px;">Catalogo Collares</h2>
+  </header><br>
+
+<main>
+  
+  <section class="productos">
+    <div class="grid" style="margin-left: 139px;">
+      {% for producto in productos %}
+      <div class="producto">
+        <img src="{{ producto.imagen_producto.url }}" alt="{{ producto.nombre_producto }}">
+        <h3>{{ producto.nombre_producto }}</h3>
+        <p>Precio: ${{ producto.precio }}</p>
+        <button>Comprar</button>
+      </div>
+      {% endfor %}
+    </div>
+  </section><br>
+
+{% endblock %}
