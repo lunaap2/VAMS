@@ -1,0 +1,22 @@
+databases:
+  - name: vlaf
+    plan: free
+    databaseName: vlaf
+    user: lunaap2
+
+services:
+  - type: web
+    plan: free
+    name: vlaf
+    runtime: python
+    buildCommand: "./build.sh"
+    startCommand: "python manage.py runserver"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: vlaf
+          property: "postgresql://lunaap2:zN5bywcLSK9hlWD9PE819WMH44iKgBvv@dpg-csbgm5a3esus73fpjd0g-a/vlaf"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: WEB_CONCURRENCY
+        value: 4
